@@ -1,0 +1,4 @@
+3 1
+0 1 2 
+3
+Is your character studing at the moment at the University of IT, Mecanics and Optics?
