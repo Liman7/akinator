@@ -1,4 +1,0 @@
-2 2
-2 3
-0 1
-Does the name of the character begins with "A"?
