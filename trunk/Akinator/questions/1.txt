@@ -1,4 +1,0 @@
-1 3
-0
-1 2 3
-Did your character write the "Akinator" game?
