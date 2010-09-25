@@ -1,0 +1,4 @@
+5 7
+2 3 6 7 9
+0 1 4 5 8 10 11
+Does the name of the character begins with "A"?
