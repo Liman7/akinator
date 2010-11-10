@@ -40,6 +40,7 @@ public:
 	bool isEmpty() const;
 	Node* headValue();
 	bool hasSingleCapacity() const;
+	int capacity() const;
 };
 
 class Table

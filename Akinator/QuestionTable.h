@@ -11,6 +11,10 @@ class QuestionTable
 private:
 	Table persons; 
 	Table questions;
+	Queue positive;
+	Queue negative;
+	int personsNumber;
+	int questionsNumber;
 	//void addQuestion(int, int);
 	//void addPerson(int, int);
 public:
@@ -20,6 +24,12 @@ public:
 	int nextQuestionNumber();
 	void guess();
 private:
+	void newTable();
 	int newQuestionValue(int);
 	void nextStep();
+public:
+	void addPerson();
+	void addQuestion();
+private:
+	void addAnswers(int);
 };

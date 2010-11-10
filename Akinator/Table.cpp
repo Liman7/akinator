@@ -79,6 +79,7 @@ void Queue::addToQueue(int x)
 
 void Queue::addToQueue(Node* node)
 {
+	node->next = NULL;
 	if (tail != NULL)
 	{
 		tail->next = node;
@@ -179,6 +180,17 @@ bool Queue::hasSingleCapacity() const
 	if (head == tail)
 		return true;
 	return false;
+}
+
+int Queue::capacity() const
+{
+	Node* tmp = head;
+	int r = 0;
+	while (tmp != NULL) {
+		tmp = tmp->next;
+		++r;
+	}
+	return r;
 }
 
 Table::Table()
@@ -291,20 +303,22 @@ bool Table::isEmpty() const
 {
 	for (int i = 0; i < num; ++i)
 	{
-		if (!t[i].isEmpty()) return false;
+		if (!t[i].isEmpty()) 
+			return false;
 	}
 	return true;
 }
 
 bool Table::isClear() const
 {
-	int i = 0;
-	for (int j = 0; j < num; ++j)
+	int i;
+	for (i = 0; i < num; ++i)
 	{
 		if (!t[i].isEmpty())
 			break;
 	}
 	if (t[i].hasSingleCapacity() && ((i + 1 >= num) || (t[i + 1].isEmpty())))
+	//if (t[i].hasSingleCapacity())
 		return true;
 	return false;
 }

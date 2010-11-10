@@ -7,11 +7,24 @@
 using namespace std;
 
 int main()
-{
+{	
 	QuestionTable qt;
 	qt = QuestionTable();
-	qt.guess();
-	int i;
-	cin >> i;
+	while (true)
+	{
+		int c = command();
+		switch (c)
+		{
+			case 1:
+				qt.guess();
+				break;
+			case 2:
+				qt.addQuestion();
+				break;
+			case 0:
+				return 0;
+		}
+		qt = QuestionTable();
+	}
 	return 0;
 }

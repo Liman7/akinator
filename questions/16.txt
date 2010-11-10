@@ -1,0 +1,4 @@
+6 9
+0 3 5 8 15 26 
+1 2 11 12 13 16 17 19 22 
+Has your character graduated physico-mathematical lyceum ü239? 
