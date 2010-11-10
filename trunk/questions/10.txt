@@ -1,0 +1,4 @@
+4 6
+1 7 15 16 
+0 8 9 19 20 25 
+Has your character ever been to the Summer Computer School? 
